@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title>Creative I</title>
+
+</head>
+
+<body>
+    <!--Start Header-->
+    <header>
+
+        <div class="container">
+            <a class="logo">
+                <img src="images/logo.png" alt="Logo">
+            </a>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="#landing">Home</a>
+                    </li>
+                    <li>
+                        <a href="#products">Products</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact&nbspUs</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="switch" onclick="switchy()">
+                <a href="#">
+                    <img id="swtch" src="images/Dark Mood.png" alt="Dark Mood">
+                    <p id="switch-p">Dark Mood</p>
+                </a>
+            </div>
+            <button id="brg-btn" onclick="dwn()">
+                <div class="burger">
+                    <div class="icon">
+                        <span></span>
+                        <span id="trn"></span>
+                        <span></span>
+                    </div>
+                    <div class="" id="list">
+
+                        <div>
+                            <a href="#landing">Home</a>
+                        </div>
+                        <div>
+                            <a href="#products">Products</a>
+                        </div>
+                        <div>
+                            <a href="#about">About</a>
+                        </div>
+                        <div>
+                            <a href="#contact">Contact us</a>
+                        </div>
+                        <div>
+                            <a onclick="switchy()" id="burger-dark">
+                                Dark
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </button>
+    </header>
+    <!--End Header-->
+    <!--Start Landing-->
+    <div class="landing" id="landing">
+        <div class="cover">
+            <img src="images/Cover.jpg" alt="cover" id="landing-cover">
+            <div class="logo center">
+                <img src="images/logo.png" alt="Logo">
+                <p>The best notebook you could have</p>
+            </div>
+        </div>
+    </div>
+    <!--End Landing-->
+    <!--Start Products-->
+    <div class="products" id="products">
+        <div class="container">
+            <h1>Availble Designs</h1>
+
+            <div class="designs ">
+                <button class="dsn" onclick="flipy(1)">
+                    <div class="design No1">
+
+                        <div class="front">
+                            <div class="shine"></div>
+                            <img src="images/m1.png" alt="Attack">
+                        </div>
+                        <div class="back">
+                            <h2>Attack On Titan</h2>
+                            <h3>coiled Notebook.</h3>
+                            <h3>Waterproof plastic cover.</h3>
+                            <h2>Available size:-</h2>
+                            <ul>
+                                <li>21 X 29.7 (A4).</li>
+                                <li>15.85 X 21 (A5).</li>
+                                <li>10.5 X 14.85 (A6).</li>
+                            </ul>
+                            <h2>Number of Sheets:-</h2>
+                            <ul>
+                                <li>80 Sheets.</li>
+                                <li>100 Sheets.</li>
+                                <li>150 Sheets.</li>
+                            </ul>
+                            <a class="buy buy1">Buy
+                                Now</a>
+                        </div>
+                    </div>
+                </button>
+                <button class="dsn" onclick="flipy(2)">
+                    <div class="design No2">
+
+                        <div class="front">
+                            <div class="shine"></div>
+                            <img src="images/m2.png" alt="Attack">
+                        </div>
+                        <div class="back">
+                            <h2>Death Note</h2>
+                            <h3>coiled Notebook.</h3>
+                            <h3>Waterproof plastic cover.</h3>
+                            <h2>Available size:-</h2>
+                            <ul>
+                                <li>21 X 29.7 (A4).</li>
+                                <li>15.85 X 21 (A5).</li>
+                                <li>10.5 X 14.85 (A6).</li>
+                            </ul>
+                            <h2>Number of Sheets:-</h2>
+                            <ul>
+                                <li>80 Sheets.</li>
+                                <li>100 Sheets.</li>
+                                <li>150 Sheets.</li>
+                            </ul>
+                            <a class="buy buy2">Buy Now</a>
+                        </div>
+                    </div>
+                </button>
+                <button class="dsn" onclick="flipy(3)">
+                    <div class="design No3">
+
+                        <div class="front">
+                            <div class="shine"></div>
+                            <img src="images/m3.png" alt="Attack">
+                        </div>
+                        <div class="back">
+                            <h2>Marwan Moussa</h2>
+                            <h3>coiled Notebook.</h3>
+                            <h3>Waterproof plastic cover.</h3>
+                            <h2>Available size:-</h2>
+                            <ul>
+                                <li>21 X 29.7 (A4).</li>
+                                <li>15.85 X 21 (A5).</li>
+                                <li>10.5 X 14.85 (A6).</li>
+                            </ul>
+                            <h2>Number of Sheets:-</h2>
+                            <ul>
+                                <li>80 Sheets.</li>
+                                <li>100 Sheets.</li>
+                                <li>150 Sheets.</li>
+                            </ul>
+                            <a class="buy buy3">Buy Now</a>
+                        </div>
+                    </div>
+                </button>
+                <button class="dsn" onclick="flipy(4)">
+                    <div class="design No4">
+
+                        <div class="front">
+                            <div class="shine"></div>
+                            <img src="images/m4.png" alt="Attack">
+                        </div>
+                        <div class="back">
+                            <h2>Abyusif</h2>
+                            <h3>coiled Notebook.</h3>
+                            <h3>Waterproof plastic cover.</h3>
+                            <h2>Available size:-</h2>
+                            <ul>
+                                <li>21 X 29.7 (A4).</li>
+                                <li>15.85 X 21 (A5).</li>
+                                <li>10.5 X 14.85 (A6).</li>
+                            </ul>
+                            <h2>Number of Sheets:-</h2>
+                            <ul>
+                                <li>80 Sheets.</li>
+                                <li>100 Sheets.</li>
+                                <li>150 Sheets.</li>
+                            </ul>
+                            <a class="buy buy4">Buy Now</a>
+                        </div>
+                    </div>
+                </button>
+                <button class="dsn" onclick="flipy(5)">
+                    <div class="design No5" style="display: none;">
+
+                        <div class="front">
+                            <div class="shine"></div>
+                            <img src="images/m5.png" alt="Attack">
+                        </div>
+                        <div class="back">
+                            <h2>Shelby</h2>
+                            <h3>coiled Notebook.</h3>
+                            <h3>Waterproof plastic cover.</h3>
+                            <h2>Available size:-</h2>
+                            <ul>
+                                <li>21 X 29.7 (A4).</li>
+                                <li>15.85 X 21 (A5).</li>
+                                <li>10.5 X 14.85 (A6).</li>
+                            </ul>
+                            <h2>Number of Sheets:-</h2>
+                            <ul>
+                                <li>80 Sheets.</li>
+                                <li>100 Sheets.</li>
+                                <li>150 Sheets.</li>
+                            </ul>
+                            <a class="buy buy5">Buy Now</a>
+                        </div>
+                    </div>
+                </button>
+                <button class="dsn" onclick="flipy(6)">
+                    <div class="design No6" style="display: none;">
+
+                        <div class="front">
+                            <div class="shine"></div>
+                            <img src="images/m6.png" alt="Attack">
+                        </div>
+                        <div class="back">
+                            <h2>Cairokee</h2>
+                            <h3>coiled Notebook.</h3>
+                            <h3>Waterproof plastic cover.</h3>
+                            <h2>Available size:-</h2>
+                            <ul>
+                                <li>21 X 29.7 (A4).</li>
+                                <li>15.85 X 21 (A5).</li>
+                                <li>10.5 X 14.85 (A6).</li>
+                            </ul>
+                            <h2>Number of Sheets:-</h2>
+                            <ul>
+                                <li>80 Sheets.</li>
+                                <li>100 Sheets.</li>
+                                <li>150 Sheets.</li>
+                            </ul>
+                            <a class="buy buy6">Buy Now</a>
+                        </div>
+                    </div>
+                </button>
+                <button class="dsn" onclick="flipy(7)">
+                    <div class="design No7" style="display: none;">
+
+                        <div class="front">
+                            <div class="shine"></div>
+                            <img src="images/m7.png" alt="Attack">
+                        </div>
+                        <div class="back">
+                            <h2>One Piece</h2>
+                            <h3>coiled Notebook.</h3>
+                            <h3>Waterproof plastic cover.</h3>
+                            <h2>Available size:-</h2>
+                            <ul>
+                                <li>21 X 29.7 (A4).</li>
+                                <li>15.85 X 21 (A5).</li>
+                                <li>10.5 X 14.85 (A6).</li>
+                            </ul>
+                            <h2>Number of Sheets:-</h2>
+                            <ul>
+                                <li>80 Sheets.</li>
+                                <li>100 Sheets.</li>
+                                <li>150 Sheets.</li>
+                            </ul>
+                            <a class="buy buy7">Buy Now</a>
+                        </div>
+                    </div>
+                </button>
+                <button class="dsn" onclick="flipy(8)">
+                    <div class="design No8" style="display: none;">
+
+                        <div class="front">
+                            <div class="shine"></div>
+                            <img src="images/m8.png" alt="Attack">
+                        </div>
+                        <div class="back">
+                            <h2>Legecy</h2>
+                            <h3>coiled Notebook.</h3>
+                            <h3>Waterproof plastic cover.</h3>
+                            <h2>Available size:-</h2>
+                            <ul>
+                                <li>21 X 29.7 (A4).</li>
+                                <li>15.85 X 21 (A5).</li>
+                                <li>10.5 X 14.85 (A6).</li>
+                            </ul>
+                            <h2>Number of Sheets:-</h2>
+                            <ul>
+                                <li>80 Sheets.</li>
+                                <li>100 Sheets.</li>
+                                <li>150 Sheets.</li>
+                            </ul>
+                            <a class="buy buy8">Buy Now</a>
+                        </div>
+                    </div>
+                </button>
+                <button class="dsn" onclick="flipy(9)">
+                    <div class="design No9" style="display: none;">
+
+                        <div class="front">
+                            <div class="shine"></div>
+                            <img src="images/m9.png" alt="Attack">
+                        </div>
+                        <div class="back">
+                            <h2>La Casa De Papel</h2>
+                            <h3>coiled Notebook.</h3>
+                            <h3>Waterproof plastic cover.</h3>
+                            <h2>Available size:-</h2>
+                            <ul>
+                                <li>21 X 29.7 (A4).</li>
+                                <li>15.85 X 21 (A5).</li>
+                                <li>10.5 X 14.85 (A6).</li>
+                            </ul>
+                            <h2>Number of Sheets:-</h2>
+                            <ul>
+                                <li>80 Sheets.</li>
+                                <li>100 Sheets.</li>
+                                <li>150 Sheets.</li>
+                            </ul>
+                            <a class="buy buy9">Buy Now</a>
+                        </div>
+                    </div>
+                </button>
+                <button class="dsn" onclick="flipy(10)">
+                    <div class="design No10" style="display: none;">
+
+                        <div class="front">
+                            <div class="shine"></div>
+                            <img src="images/m10.png" alt="Attack">
+                        </div>
+                        <div class="back">
+                            <h2>Wegz</h2>
+                            <h3>coiled Notebook.</h3>
+                            <h3>Waterproof plastic cover.</h3>
+                            <h2>Available size:-</h2>
+                            <ul>
+                                <li>21 X 29.7 (A4).</li>
+                                <li>15.85 X 21 (A5).</li>
+                                <li>10.5 X 14.85 (A6).</li>
+                            </ul>
+                            <h2>Number of Sheets:-</h2>
+                            <ul>
+                                <li>80 Sheets.</li>
+                                <li>100 Sheets.</li>
+                                <li>150 Sheets.</li>
+                            </ul>
+                            <a class="buy buy10">Buy Now</a>
+                        </div>
+                    </div>
+                </button>
+                <button class="dsn" onclick="flipy(11)">
+                    <div class="design No11" style="display: none;">
+
+                        <div class="front">
+                            <div class="shine"></div>
+                            <img src="images/m11.png" alt="Attack">
+                        </div>
+                        <div class="back">
+                            <h2>Mosv Sam</h2>
+                            <h3>coiled Notebook.</h3>
+                            <h3>Waterproof plastic cover.</h3>
+                            <h2>Available size:-</h2>
+                            <ul>
+                                <li>21 X 29.7 (A4).</li>
+                                <li>15.85 X 21 (A5).</li>
+                                <li>10.5 X 14.85 (A6).</li>
+                            </ul>
+                            <h2>Number of Sheets:-</h2>
+                            <ul>
+                                <li>80 Sheets.</li>
+                                <li>100 Sheets.</li>
+                                <li>150 Sheets.</li>
+                            </ul>
+                            <a class="buy buy11">Buy Now</a>
+                        </div>
+                    </div>
+                </button>
+                <button class="dsn" onclick="flipy(12)">
+                    <div class="design No12 bom" style="display: none;">
+
+                        <div class="front">
+                            <div class="shine"></div>
+                            <img src="images/m12.png" alt="Attack">
+                        </div>
+                        <div class="back">
+                            <h2>BTS</h2>
+                            <h3>coiled Notebook.</h3>
+                            <h3>Waterproof plastic cover.</h3>
+                            <h2>Available size:-</h2>
+                            <ul>
+                                <li>21 X 29.7 (A4).</li>
+                                <li>15.85 X 21 (A5).</li>
+                                <li>10.5 X 14.85 (A6).</li>
+                            </ul>
+                            <h2>Number of Sheets:-</h2>
+                            <ul>
+                                <li>80 Sheets.</li>
+                                <li>100 Sheets.</li>
+                                <li>150 Sheets.</li>
+                            </ul>
+                            <a class="buy buy12">Buy Now</a>
+                        </div>
+                    </div>
+                </button>
+                <button class="dsn" onclick="flipy(13)">
+                    <div class="design No13 bom" style="display: none;">
+
+                        <div class="front">
+                            <div class="shine"></div>
+                            <img src="images/m13.png" alt="Attack">
+                        </div>
+                        <div class="back">
+                            <h2>Marwan Pablo</h2>
+                            <h3>coiled Notebook.</h3>
+                            <h3>Waterproof plastic cover.</h3>
+                            <h2>Available size:-</h2>
+                            <ul>
+                                <li>21 X 29.7 (A4).</li>
+                                <li>15.85 X 21 (A5).</li>
+                                <li>10.5 X 14.85 (A6).</li>
+                            </ul>
+                            <h2>Number of Sheets:-</h2>
+                            <ul>
+                                <li>80 Sheets.</li>
+                                <li>100 Sheets.</li>
+                                <li>150 Sheets.</li>
+                            </ul>
+                            <a class="buy buy13">Buy Now</a>
+                        </div>
+                    </div>
+                </button>
+
+            </div>
+
+            <div class="more-container">
+                <button class="more" onclick="hideIt()">More..</button>
+            </div>
+        </div>
+    </div>
+    <!--End Products-->
+    <!--Start About-->
+    <div class="about" id="about">
+        <div class="container">
+            <h1 id="trans-heading">Who are we?</h1>
+            <div class="trans">
+                <button class="active" id="trans-btn1" onclick="amActiveBtn1()">1</button>
+                <button class="" id="trans-btn2" onclick="amActiveBtn2()">2</button>
+                <button class="" id="trans-btn3" onclick="amActiveBtn3()">3</button>
+            </div>
+            <p id="trans-p">
+                We are a team of desingers and notebook makers specialized in make you comfortable to use a nice-looking
+                notebook.
+                We can provide you with notebook covered with an image of your
+                favorite artist, TV show and anime. We also can provide a cool notebook cover with your own picture,
+                your lovely pet, a person you like,
+                your own design and you cool art -like (digital art, pencil or colors drowin, paints)- and we're glade
+                to serve you.
+            </p>
+        </div>
+    </div>
+    <!--End About-->
+    <!--Start Contact-->
+    <div class="contact" id="contact">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <div class="mail">
+                <input type="textbox" placeholder="Enter Your Email.">
+                <textarea name="message" id="maily" cols="30" rows="10" placeholder="Write your massage."></textarea>
+                <div class="send">
+                    Send
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Contact-->
+    <!--Start Footer-->
+    <footer>
+
+    </footer>
+    <!--End Footer-->
+    <script src="js/inter.js">
+    </script>
+</body>
+
+</html>

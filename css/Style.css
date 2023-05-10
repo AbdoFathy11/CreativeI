@@ -1,0 +1,599 @@
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e9fbff;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+:root {
+    --blue: #00cdff;
+    --orange: #e55916;
+    --hover-color: rgba(0, 0, 0, 0.068);
+    --mn-transition: 0.3s;
+    --f-size: 35px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+
+}
+
+.center-ver {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* End Global Rules */
+
+/* Start Header */
+header {
+    width: 100%;
+    height: 60px;
+    background-color: var(--blue);
+    display: flex;
+    position: fixed;
+    z-index: 100;
+    justify-content: flex-start;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logo img {
+    height: 60px;
+
+}
+
+header .container ul {
+    display: flex;
+    height: 100%;
+    margin: 0;
+}
+
+header .container ul li {
+    height: 100%;
+}
+
+header .container ul a {
+    font-size: var(--f-size);
+    width: fit-content;
+    height: 100%;
+    color: var(--orange);
+    padding: 0 15px;
+    transition: var(--mn-transition);
+    display: block;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+header .container .switch img {
+    height: 30px;
+    width: 30px;
+    margin: 3px;
+}
+
+header .container .switch a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+header .container .switch a p {
+    font-weight: bold;
+    color: #000033;
+    margin: 0;
+}
+
+.burger .icon span {
+    width: 45px;
+    height: 5px;
+    background-color: var(--orange);
+    display: block;
+    margin: 5px;
+    transition: 1s;
+}
+
+.burger .icon {
+    width: fit-content;
+    padding-left: 150px;
+}
+
+.burger .list {
+    width: fit-content;
+    padding: 5px 20px;
+    background-color: #00ccff57;
+    font-size: 30px;
+    position: relative;
+    margin: 10px 0;
+}
+
+.burger #list {
+    display: none;
+}
+
+.burger .list a {
+    text-decoration: none;
+    margin: 20px 5px;
+    padding: 20px 5px;
+    color: #e55916;
+    display: block;
+    transition: 0.2s;
+}
+
+.burger .list a:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.212);
+    transform: scale(1.1);
+}
+
+.burger {
+    cursor: pointer;
+    display: none;
+}
+
+#brg-btn {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+/* Start Psuedo Elements */
+header .container ul a::after {
+    content: "";
+    width: 3px;
+    height: 3px;
+    background-color: var(--orange);
+    transition: var(--mn-transition);
+    position: absolute;
+    left: -5px;
+    bottom: 0;
+}
+
+header .container .switch a::after {
+    content: "";
+    width: 3px;
+    height: 3px;
+    background-color: #000033;
+    transition: var(--mn-transition);
+    position: absolute;
+    left: -5px;
+    bottom: 0;
+}
+
+/* End Psuedo Elements */
+
+/* Start Hover */
+header .container ul a:hover {
+    background-color: var(--hover-color);
+}
+
+header .container ul a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+header .container .switch a:hover {
+    background-color: var(--hover-color);
+}
+
+header .container .switch a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* End Hover */
+
+/* End Header */
+
+/*Start Landing*/
+.landing .cover {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.cover>img {
+    height: 150vh;
+    animation: movin ease-in-out alternate 12s infinite;
+}
+
+.landing .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.landing .logo img {
+    width: 100%;
+}
+
+.landing .logo p {
+    font-size: 3vw;
+    font-weight: bold;
+    color: var(--orange);
+    padding: 0;
+    text-align: center;
+}
+
+/*End Landing*/
+/*Start Products*/
+.products {
+    padding: 50px 0;
+}
+
+.products h1 {
+    text-align: center;
+    font-size: var(--f-size);
+    color: var(--orange);
+    margin: 20px 0;
+    font-weight: bolder;
+}
+
+.products .design {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1s;
+    perspective: 800px;
+    transform-origin: right center;
+    cursor: pointer;
+}
+
+.products .container .designs>button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.products .container .designs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.products .design .front img {
+    max-width: 270px;
+}
+
+.products .design .back {
+    width: 270px;
+    background-color: var(--blue);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotatey(180deg);
+    backface-visibility: hidden;
+    padding: 0 22px;
+    color: white;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+    padding: 10px;
+}
+
+.products .design .back ul {
+    margin: 3px;
+    font-size: 95%;
+}
+
+.products .design .back a {
+    border: 2.5px solid white;
+    padding: 10px;
+    border-radius: 15px;
+    margin: auto;
+    cursor: pointer;
+    transition: var(--mn-transition);
+    color: white;
+}
+
+.products .design .back h2,
+h3 {
+    padding: 5px 0;
+    margin: 0;
+}
+
+.products .design .front .shine {
+    width: 800px;
+    background-color: #ffffff;
+    height: 100px;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: -573px;
+    top: 37px;
+    transition: 0.6s;
+    opacity: 0%;
+}
+
+.products .design .front {
+    position: relative;
+    overflow: hidden;
+}
+
+.more-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.products .container .more {
+    background-color: var(--blue);
+    color: white;
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    font-size: var(--f-size);
+    font-weight: bold;
+    transition: var(--mn-transition);
+    cursor: pointer;
+}
+
+.products .container .more:hover {
+    background-color: #00ccff91;
+    transform: scale(1.3);
+}
+
+/*Start Hover*/
+.products .design .front:hover .shine {
+    left: 200px;
+    top: 200px;
+    opacity: 20%;
+}
+
+.products .design .back a:hover {
+    background-color: rgba(255, 255, 255, 0.349);
+    transform: scale(1.3);
+    border: 1px solid white;
+}
+
+/*End Hover*/
+/*End Products*/
+/* Start About */
+.about {
+    background-image: linear-gradient(#00ccff30, #e9fbff);
+    padding: 20px;
+}
+
+.about h1 {
+    font-size: var(--f-size);
+    color: var(--orange);
+    text-align: center;
+
+}
+
+.about .trans button {
+    border: 3px solid white;
+    outline: none;
+    background-color: lightgray;
+    border-radius: 50%;
+    padding: 5px;
+    width: 45px;
+    height: 45px;
+    color: white;
+    font-size: 27px;
+    font-weight: bold;
+    margin: 30px 10px;
+    cursor: pointer;
+    transition: var(--mn-transition);
+}
+
+.about .trans {
+    display: flex;
+    justify-content: center;
+}
+
+.about p {
+    font-size: 20px;
+    width: 60%;
+    color: var(--orange);
+    line-height: 40px;
+    text-shadow: 0px 2px 10px #ee6625cc;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.about .trans button.active {
+    background-color: var(--orange);
+}
+
+.about .trans button.active:hover {
+    background-color: var(--orange);
+}
+
+.about .trans button:hover {
+    background-color: #ee652573;
+}
+
+.about p ul {
+    list-style-type: disc;
+}
+
+.about p ul li {
+    padding: 5px;
+}
+
+/*End About*/
+/*Start Contact*/
+.contact {
+    position: relative;
+    margin: 100px 0;
+    padding: 30px 0;
+    background-image: linear-gradient(#00ccff17, #e9fbff);
+}
+
+.contact h1 {
+    color: var(--orange);
+    font-size: 45px;
+    text-align: center;
+}
+
+.contact .mail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mail textarea {
+    margin: 30px 0;
+    border-radius: 30px;
+    padding: 15px;
+    outline: none;
+    border: solid 1px var(--blue);
+    resize: none;
+    color: var(--blue);
+    width: 100%;
+}
+
+.mail input {
+    border-radius: 30px;
+    padding: 5px 15px;
+    outline: none;
+    border: solid 1px var(--blue);
+    color: var(--blue);
+    width: 100%;
+}
+
+.mail .send {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--blue);
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 30px;
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+    background-color: var(--blue);
+    height: 100px;
+}
+
+/*End Contact*/
+/* Start Media*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .products .container .designs {
+        grid-template-columns: 260px;
+    }
+
+    header .container {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .container {
+        width: 70%;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 70%;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    header .menu {
+        display: none;
+    }
+
+    .switch {
+        display: none;
+    }
+
+    .about p {
+        font-size: 16px;
+        text-shadow: initial;
+        line-height: initial;
+        width: initial;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+
+    header .container ul a {
+        font-size: 25px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+
+    header .container ul a {
+        font-size: 30px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* End Media*/
+/* Start Animation*/
+@keyframes movin {
+    to {
+        transform: translate(-50px, -60px) scale(1.5) rotate(15deg);
+    }
+}
+
+/* End Animation*/

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative I</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="file:///D:/Creativ%20I%20Website%20Modufyed/index.html" class="logo">
+                <img src="../images/logo.png" alt="Logo">
+            </a>
+        </div>
+    </header>
+    <!--Start Landing-->
+    <div class="landing" id="landing">
+        <div class="cover">
+            <img src="../images/Cover.jpg" alt="cover" id="landing-cover" class="movin-cover">
+            <img src="../images/m5 cover.png" alt="Cover" class="fixed-cover">
+            <div class="center logo">
+                <div class="notebox center-ver">
+                    <div class="front">
+                        <img src="../images/m5.png" alt="Attack">
+                    </div>
+                    <div class="back">
+                        <img src="../images/b5.png" alt="Attack">
+                    </div>
+                </div>
+                <h1>Attack On Titan Notebook</h1>
+
+            </div>
+        </div>
+    </div>
+    <!--End Landing-->
+    <!--Start About-->
+    <div class="about">
+        <div class="container">
+            <h1>About Notebook</h1>
+            <div class="info">
+                <ul>
+                    <li>Category: Plastic-covered coil notebook</li>
+                    <li>Design-Category: TV-Show</li>
+                    <li>Available Size:
+                        <ul>
+                            <li>Large - 21 X 29.7 (A4).</li>
+                            <li>Medium - 15.85 X 21 (A5).</li>
+                            <li>Mini - 10.5 X 14.85 (A6).</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--End About-->
+    <!--Start buy-it-now-->
+    <div class="buy">
+        <div class="container">
+            <h1>Buy It Now</h1>
+            <p>You will never regret.</p>
+            <div class="form">
+                <form action="">
+                    <div class="namenphone">
+                        <div>
+                            <p>Your name:</p>
+                            <input type="text" name="name" id="name-input" placeholder="Enter your name.">
+                        </div>
+                        <div>
+                            <p>Your phone number:</p>
+                            <input type="text" name="tel" id="phone" placeholder="Enter your phone-number" value="+20">
+                        </div>
+                    </div>
+                    <p>Your e-mail address:</p>
+                    <input type="text" name="mail" id="mail" placeholder="Enter your E-mail" class="mail">
+                    <p>Select your city:</p>
+                    <select name="city" aria-placeholder="Select your city">
+                        <option value="Select">Select</option>
+                        <option value="Cairo">Cairo</option>
+                        <option value="Alex">Alex</option>
+                        <option value="Giza">Giza</option>
+                        <option value="6-Octobre">6-Octobre</option>
+                    </select>
+                    <p>Where can we deliver?</p>
+                    <input type="text" name="address" id="address" placeholder="Enter your location" class="location">
+                    <p>Want to tell us more? (Opcianal)</p>
+                    <textarea name="more" id="more-info" cols="30" rows="5"
+                        placeholder="Enter Any more Information you want to tell us"></textarea>
+
+                </form>
+                <button onclick="showResult()">Done!</button>
+                <div id="form-result"></div>
+            </div>
+        </div>
+    </div>
+    <!--End buy-it-now-->
+    <!--Start Comments-->
+    <div class="comments">
+        <div class="container" id="com-con">
+            <h1>Leave a Comment</h1>
+            <div class="coment-form">
+                <p>Your Name:</p>
+                <input type="text" placeholder="Enter your name here" id="user-name">
+                <p>The Comment:</p>
+                <textarea name="comment" id="comment-el" cols="30" rows="5"
+                    placeholder="Put your nice comment here."></textarea>
+                <button onclick="commentIt()">Done</button>
+                <p id="error"></p>
+            </div>
+            <div class="comments-show">
+                <h1>Comments</h1>
+                <div class="comment">
+                    <div class="profile">
+                        <img src="../images/profile.png" alt="person">
+                        <p>Youssef</p>
+                    </div>
+                    <p class="comment-show">
+                        lovely notebook, I loved it!
+                    </p>
+                </div>
+                <p onclick="like(1)" id="like1">Like</p>
+                <div id="plus-comment"></div>
+            </div>
+        </div>
+    </div>
+    <!--End Comments-->
+    <!--Start Footer-->
+    <footer>
+        <div class="container">
+
+        </div>
+    </footer>
+    <!--End Footer-->
+
+    <script src="index.js"></script>
+</body>
+
+</html>

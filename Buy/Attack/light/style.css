@@ -1,0 +1,478 @@
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e9fbff;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+:root {
+    --blue: #00cdff;
+    --orange: #e55916;
+    --hover-color: rgba(0, 0, 0, 0.068);
+    --mn-transition: 0.3s;
+    --f-size: 35px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+
+}
+
+.center-ver {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* End Global Rules */
+/*Start Header*/
+header {
+    width: 100%;
+    height: 60px;
+    background-color: var(--blue);
+    position: fixed;
+    z-index: 100;
+
+}
+
+header .container {
+    display: flex;
+    justify-content: center;
+}
+
+header a img {
+    height: 60px;
+}
+
+/*End Header*/
+/*Start Landing*/
+.landing .cover {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.cover img.movin-cover {
+    height: 150vh;
+    animation: movin ease-in-out alternate 12s infinite;
+}
+
+.cover img.fixed-cover {
+    height: 150vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 20%;
+}
+
+.landing .notebox {
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 800px;
+    animation: flipin 4s infinite ease-in-out alternate;
+    width: fit-content;
+}
+
+.front img,
+.back img {
+    max-width: 350px;
+}
+
+.back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+.landing .logo h1 {
+    font-size: 4vw;
+    font-weight: bold;
+    color: var(--orange);
+    padding: 0;
+    text-align: center;
+}
+
+/*End Landing*/
+/*Start About*/
+.about {
+    padding: 20px;
+    margin: 20px;
+}
+
+.about h1 {
+    text-align: center;
+    font-size: var(--f-size);
+    color: var(--orange);
+    padding: 20px;
+}
+
+.info ul {
+    padding: 20px;
+    color: var(--orange);
+    font-size: 28px;
+}
+
+.info ul li {
+    padding: 15px;
+}
+
+.info ul li ul {
+    list-style-type: disclosure-closed;
+}
+
+/*End About*/
+/*Start buy-it-now*/
+.buy .container h1 {
+    text-align: center;
+    font-size: var(--f-size);
+    color: var(--orange);
+}
+
+.buy .container>p {
+    text-align: center;
+    color: var(--orange);
+}
+
+textarea {
+    margin: 30px 0;
+    border-radius: 30px;
+    padding: 15px;
+    outline: none;
+    border: solid 1px var(--blue);
+    resize: none;
+    color: var(--blue);
+    width: 100%;
+}
+
+.buy form {
+    padding: 70px 0 0;
+}
+
+.buy form p {
+    color: var(--orange);
+}
+
+.buy form input {
+    border-radius: 30px;
+    padding: 15px;
+    outline: none;
+    border: solid 1px var(--blue);
+    color: var(--blue);
+}
+
+.buy form select {
+    border-radius: 3px;
+    outline: none;
+    border: solid 1px var(--blue);
+    color: var(--blue);
+    width: 50%;
+    text-align: center;
+    background-color: white;
+
+}
+
+.namenphone {
+    display: flex;
+}
+
+.namenphone>div {
+    width: 50%;
+}
+
+.namenphone>div>input {
+    width: 70%;
+}
+
+input.mail {
+    width: 50%;
+}
+
+input.location {
+    width: 100%;
+}
+
+.buy button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--blue);
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 30px;
+    text-align: center;
+    border: none;
+    outline: none;
+    margin: 20px 0;
+}
+
+.buy button:hover {
+    opacity: 70%;
+    transform: scale(1.005);
+}
+
+.buy button:active {
+    opacity: 100%;
+    transform: scale(0.98);
+}
+
+#form-result p {
+    color: var(--orange);
+    line-height: 2;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*End buy-it-now*/
+/* Start Comments */
+.comments {
+    margin: 80px 0;
+}
+
+.comments .container h1 {
+    text-align: center;
+    font-size: var(--f-size);
+    color: var(--orange);
+    padding: 30px;
+}
+
+.comments .container .comment-form p {
+    color: var(--orange);
+}
+
+.comments input {
+    border-radius: 30px;
+    padding: 15px;
+    outline: none;
+    border: solid 1px var(--blue);
+    color: var(--blue);
+    width: 30%;
+}
+
+.comments button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--blue);
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 30px;
+    text-align: center;
+    border: none;
+    outline: none;
+    margin: 20px 0;
+}
+
+.comments button:hover {
+    opacity: 70%;
+    transform: scale(1.005);
+}
+
+.comments button:active {
+    opacity: 100%;
+    transform: scale(0.98);
+}
+
+.comments-show {
+    border: 3px solid var(--blue);
+    border-radius: 15px;
+    padding: 50px;
+}
+
+.comments-show .comment {
+    border-radius: 15px;
+    background-color: #00ccff5d;
+    border: 5px solid var(--blue);
+    padding: 15px;
+}
+
+.comments-show .profile img {
+    width: 60px;
+    height: 60px;
+    border: 2px solid var(--orange);
+    border-radius: 50%;
+    margin: 0 20px 0 0;
+}
+
+.comments-show .profile {
+    display: flex;
+    align-items: center;
+}
+
+.comments-show .profile p {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+    color: var(--orange);
+}
+
+.comments-show p.comment-show {
+    font-size: 20px;
+    margin: 0 80px;
+}
+
+.comment+p {
+    margin: 5px 0 5px 20px;
+    font-size: 20px;
+    color: initial;
+    cursor: pointer;
+    width: fit-content;
+    user-select: none;
+}
+
+.comment+p:hover {
+    color: #5a9bac;
+    opacity: 80%;
+}
+
+.comments-show h1 {
+    text-align: center;
+    color: var(--orange);
+    font-size: var(--f-size);
+    padding: 0;
+    margin: 0;
+}
+
+/* End Comments */
+/* Start Footer */
+footer {
+    width: 100%;
+    background-color: var(--blue);
+    height: 100px;
+}
+
+/*End Footer*/
+/* Start Media*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 70%;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 70%;
+    }
+
+    .info ul {
+        padding: 15px;
+        color: var(--orange);
+        font-size: 20px;
+    }
+
+    .comments-show .profile p {
+        font-size: 20px;
+        font-weight: lighter;
+    }
+
+    .comments-show p.comment-show {
+        font-size: 15px;
+        margin: 5px;
+    }
+
+    .comments-show .profile img {
+        width: 40px;
+        height: 40px;
+        border: 2px solid var(--orange);
+        border-radius: 50%;
+        margin: 0 10px 0 0;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 70%;
+    }
+
+    .info ul {
+        padding: 15px;
+        color: var(--orange);
+        font-size: 20px;
+    }
+
+    .comments-show .profile p {
+        font-size: 20px;
+        font-weight: lighter;
+    }
+
+    .comments-show p.comment-show {
+        font-size: 15px;
+        margin: 5px;
+    }
+
+    .comments-show .profile img {
+        width: 40px;
+        height: 40px;
+        border: 2px solid var(--orange);
+        border-radius: 50%;
+        margin: 0 10px 0 0;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/*End Media*/
+/*Start Animatiom*/
+@keyframes flipin {
+    to {
+        transform: rotateY(180deg) translateX(20%);
+
+    }
+}
+
+@keyframes movin {
+    to {
+        transform: translate(-50px, -60px) scale(1.5) rotate(15deg);
+    }
+}
+
+/*End Animatiom*/
